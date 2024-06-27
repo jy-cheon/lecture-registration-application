@@ -2,6 +2,8 @@ package io.jeeyeon.app.domain;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +16,8 @@ public class LectureService {
     private final StudentRepository studentRepository;
     private final LectureApplyHistoryRepository lectureApplyHistoryRepository;
 
-    // TODO 트랜잭션 붙이기
+
+    @Transactional
     public LectureApplyHistory applyLecture(LectureApplyHistory lectureApply) {
         // 해당 학생이 있는지 확인
         Student student = findStudent(lectureApply.getUserId());
