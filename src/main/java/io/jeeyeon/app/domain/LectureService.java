@@ -41,7 +41,7 @@ public class LectureService {
             // 강의 신청
             return saveLectureHistory(new LectureApplyHistory(student.getId(), lecture.getId()));
         } else {
-            // 잔여 없다~~~~~~~~~
+            // 잔여 없다
             throw new NoCapacityLeftException(lecture);
         }
     }
@@ -63,12 +63,6 @@ public class LectureService {
     public Lecture findLecture(Lecture lecture) {
         return lectureRepository.findLecture(lecture);
     }
-
-//    public boolean isAvailableLecture(long lectureId) {
-//        LectureCapacity lectureCapacity = lectureCapacityRepository.findByLectureId(lectureId);
-//        return lectureCapacity.isAvailableLecture();
-//    }
-
 
     public LectureCapacity getLectureCapacity(long lectureId) {
         return lectureCapacityRepository.findByLectureId(lectureId);
