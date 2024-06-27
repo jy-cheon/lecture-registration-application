@@ -4,7 +4,8 @@
 
 **ERD**
 
-![erd.png](..%2F..%2F..%2FDownloads%2Ferd.png)
+<img width="1186" alt="erd" src="https://github.com/jy-cheon/lecture-registration-application/assets/79885828/50107099-58b2-4784-8635-44b8f70dce59">
+
 
 ---
 
@@ -61,7 +62,8 @@
 
 
 **Clean + Layered Architecture**
-![Untitled.png](..%2F..%2F..%2FDownloads%2FUntitled.png)
+![Untitled](https://github.com/jy-cheon/lecture-registration-application/assets/79885828/ec68d630-0da7-4feb-aa0d-934dc00a319e)
+
 
 
 
